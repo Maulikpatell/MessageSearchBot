@@ -110,14 +110,16 @@ async def inline_handlers(_, event: Message):
     try:
 
         a=await event.reply_text(answers) 
-        await a.message.delete(30)
+        await asyncio.sleep(10)
+        await a.delete()
 	
         print(f"[{Config.BOT_SESSION_NAME}] - Answered Successfully - {event.from_user.first_name}")
     except QueryIdInvalid:
 	
 	
         print(f"[{Config.BOT_SESSION_NAME}] - Failed to Answer - {event.from_user.first_name}")
-        await a.message.delete(30)
+        await asyncio.sleep(10)
+        await a.delete()
 
 @Bot.on_callback_query()
 async def button(bot, cmd: CallbackQuery):
