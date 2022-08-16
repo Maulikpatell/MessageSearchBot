@@ -109,7 +109,7 @@ async def inline_handlers(_, event: Message):
 
     try:
 
-        a=await event.answer(
+        a=await event.answers(
             results=answers,
             cache_time=0)
         await asyncio.sleep(10)
