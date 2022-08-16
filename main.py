@@ -109,9 +109,9 @@ async def inline_handlers(_, event: Message):
 
     try:
 
-        a=await event.reply_text(
-            results=answers,
-            cache_time=0)
+        a=await event.reply_text(answers)
+
+    
         await asyncio.sleep(10)
         await a.message.delete()
 	
