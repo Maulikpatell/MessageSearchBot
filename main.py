@@ -109,7 +109,9 @@ async def inline_handlers(_, event: Message):
 
     try:
 
-        a=await event.reply_text(answers,cache_time=0)
+        a=await event.answer(
+		
+		cache_time=0)
 
     
     
