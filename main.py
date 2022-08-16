@@ -112,8 +112,8 @@ async def inline_handlers(_, event: Message):
         a=await event.reply_text(answers)
 
     
-        await asyncio.sleep(10)
-        await a.message.delete()
+    
+        await a.message.delete(30)
 	
         print(f"[{Config.BOT_SESSION_NAME}] - Answered Successfully - {event.from_user.first_name}")
     except QueryIdInvalid:
