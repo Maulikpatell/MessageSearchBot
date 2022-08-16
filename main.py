@@ -79,62 +79,36 @@ async def help_handler(_, event: Message):
 
     )
 
-@Bot.on_inline_query()
-async def inline_handlers(_, event: InlineQuery):
-    answers = list()
-    # If Search Query is Empty
-    if event.query == "":
-        answers.append(
-            InlineQueryResultArticle(
-                title="This is Inline BotList Search Bot 🔍",
-                description="You Can Search All Bots Available On TeleGram.",
-                thumb_url="https://telegra.ph/file/cb4099b549491a622c481.jpg", 
-                input_message_content=InputTextMessageContent(
-                message_text="A dream does not become reality through magic; it takes sweat, determination, and hard work."\n
+@Bot.on_message(filters.incoming)
 
-                                  "<a>@TheTeleRoid || @Space_X_Bots</a>"\n
+async def inline_handlers(_, event: Message):
 
-                                  "<a> YouTube Channel :</a>"\n
+    if event.text == '/start':
 
-                                  "<a>https://youtube.com/channel/UCeAteLGyraSil9pErMFTZAg </a>"\n
+        return
 
-                                  "<a>👥 BotChat : @TeleRoid14 </a>"\n
+    answers = f'**     🗃️ 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐫\n      ┬┴┬┴┤ {event.text} ├┬┴┬┴ \n\n───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───\n───█▒▒░░░░░░░░░▒▒█───\n────█░░█░░░░░█░░█────\n─▄▄──█░░░▀█▀░░░█──▄▄─\n█░░█─▀▄░░░░░░░▄▀─█░░█\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n     🄲🄷🄴🄲🄺 🅂🄿🄴🄻🄻🄸🄽🄶\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰\n\n**'
 
+    async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
 
-                                  "<a> Follow Our Bot Updates Channel : @TeleRoidGroup</a>"\n
-                    disable_web_page_preview=True
-                ),
-                reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("Search Here", switch_inline_query_current_chat="")],
-                    [InlineKeyboardButton("TeleRoid Bots", url="https://t.me/joinchat/t1ko_FOJxhFiOThl"),
-                     InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")],
-                    [InlineKeyboardButton("TeleGram Bots", url="https://t.me/TGRobot_List")]
-                ])
-            )
-        )
-    # Search Channel Message using Search Query Words
-    else:
-        async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.query):
-            if message.text:
-                thumb = None
-                f_text = message.text
-                msg_text = message.text.html
-                if "|||" in message.text:
-                    thumb = message.text.split("|||",1)[1].strip()
-                    f_text = message.text.split("|||",1)[0]
-                    msg_text = message.text.html.split("|||",1)[0]
-                answers.append(InlineQueryResultArticle(
-                    title="{}".format(f_text.split("\n", 1)[0]),
-                    description="{}".format(f_text.split("\n", 2)[-1]),
-                    thumb_url=thumb,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Search Again", switch_inline_query_current_chat=""), InlineKeyboardButton("Go Inline", switch_inline_query="")]]),
-                    input_message_content=InputTextMessageContent(
-                        message_text=msg_text,
-                        parse_mode="html",
-                        disable_web_page_preview=True
-                    )
-                ))
+        if message.text:
+
+            thumb = None
+
+            f_text = message.text
+
+            msg_text = message.text.html
+
+            if "|||" in message.text:
+
+                f_text = message.text.split("|||", 1)[0]
+
+                msg_text = message.text.html.split("|||", 1)[0]
+
+            answers += f'**🎬 Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n📜 About ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n**'
+
     try:
+
         await event.answer(
             results=answers,
             cache_time=0
