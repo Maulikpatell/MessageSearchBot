@@ -64,18 +64,18 @@ async def inline_handlers(_, event: InlineQuery):
                 description="You Can Search All Bots Available On TeleGram.",
                 thumb_url="https://telegra.ph/file/cb4099b549491a622c481.jpg", 
                 input_message_content=InputTextMessageContent(
-                    message_text="A dream does not become reality through magic; it takes sweat, determination, and hard work."\n
+                message_text="A dream does not become reality through magic; it takes sweat, determination, and hard work."\n
 
                                   "<a>@TheTeleRoid || @Space_X_Bots</a>"\n
 
-                                  "<a>🔴 YouTube Channel :</a>"\n
+                                  "<a> YouTube Channel :</a>"\n
 
                                   "<a>https://youtube.com/channel/UCeAteLGyraSil9pErMFTZAg </a>"\n
 
                                   "<a>👥 BotChat : @TeleRoid14 </a>"\n
 
 
-                                  "<a> Follow Our Bot Updates Channel : @TeleRoidGroup</a>",\n
+                                  "<a> Follow Our Bot Updates Channel : @TeleRoidGroup</a>"\n
                     disable_web_page_preview=True
                 ),
                 reply_markup=InlineKeyboardMarkup([
