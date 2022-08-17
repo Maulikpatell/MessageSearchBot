@@ -16,7 +16,7 @@ class Config(object):
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
     ABOUT_BOT_TEXT = """<b>This is a TeleGram BotList Search Bot of @TheTeleRoid And Some Other Bots Available On TeleGram.
 
-🤖 My Name: <a href='https://t.me/PHListBot'> @PHListBot </a>
+🤖 My Name: <a href='https://t.me/DTG_TV'> Me Nahi Bataunga😂😂 </a>
 
 📝 Language : <a href='https://www.python.org'> Python V3</a>
 
@@ -24,67 +24,33 @@ class Config(object):
 
 📡 Server: <a href='https://heroku.com'> Heroku </a>
 
-👨‍💻 Modified By: <a href='https://t.me/PredatorHackerzZ'>@HelpLessBoi</a>
+👨‍💻 Modified By: <a href='https://t.me/DTG_BOTS'> Let's Play Hide & Seek (❁´◡`❁) </a>
 
-🌀 Github Repo: <a href='https://github.com/PredatorHackerzZ/MessageSearchBot'>Click Me</a>
+🌀 Github Repo: <a href='https://github.com/PredatorHackerzZ/MessageSearchBot'>Agar Mera Wala Chahiye To 2k karao Varna Isise Kam Chalao</a>
 
-👥 Bots Support: <a href='https://t.me/teleroid14'>@TeleRoid14</a>
+👥 Bots Support: <a href='https://t.me/DTG_SUPPORT'> Aapke Liye Ye Banda Hazir Hai </a>
 
-📢 Bots Updates: <a href='https://t.me/teleroidgroup'>@TeleRoidGroup</a></b>
+📢 Bots Updates: <a href='https://t.me/DTG_BOTS'> Click Karo Or Join Karo </a></b>
 """
     
-    ABOUT_HELP_TEXT = """<b>👨‍💻 Developers : <a href='https://t.me/PredatorHackerzZ'>@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙</a>
-
-Bots are simply Telegram accounts operated by software – not people – and they'll often have AI features. They can do anything – teach, play, search, broadcast, remind, connect, integrate with other services, or even pass commands to the Internet of Things.
-
-Choose Your Bot Category Here 🤗
-
-☛ RENAMER_BOTS
-☛ FILE_TO_LINK_BOTS
-☛ GDRIVE_BOTS
-☛ URL_UPLOADER_BOTS
-☛ YOUTUBE_DOWNLOAD_BOTS
-☛ FILE_CONVERTOR_BOTS
-☛ UNZIP_BOTS
-☛ SCREENSHOT_BOT
-☛ GOOGLE_TRANSLATION_BOTS
-☛ TORRENT_DOWNLOADER_BOTS
-☛ DMCA_REMOVAL_BOTS
-☛ WATERMARK_BOT
-☛ VIDEO_MERGER_BOTS
-
-**These Bots can Do Multiple things with different Functions**:-
-
-🌀 I will help you to find Best Telegram Bots.
-
-🌀 If you Get Any Error In Searching Please Report at **@TeleRoid14**.
-
-🌀 Our Project Channel: <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a>.
-
-🌀 All Bots Based On Users and Developer Demands. 
-
-🤖 Join For All Available Bots On Telegram: @TGRobot_List.
+    ABOUT_HELP_TEXT =  """<b>👨‍💻 Developer : <a href='https://t.me/DTG_Admin_bot'>DTG TV</a>
+If You Want Your Own Bot Like This Then You Can Contact Our Developer.</b>
 """
     
     HOME_TEXT = """
-<b>👋 Hey !{}, This is Online Search Botlist Bot <a href='https://t.me/PHListBot'>@PHListBot</a>.
-
-<a> Modified By : @PredatorHackerzZ</a>
-
-       <a> Credits goes to Everyone Who Supported.</b>
-
-<a> Made With ❤ By @TheTeleRoid </a>
+<b>Hey! {}❤️,
+I'm Mdisk Search Robot.🤖</a>
+I Can Search!🔍 What You Want?😜
+<a>Deploy ❤ By @DTG_TV</a></b>
 """
 
 
     START_MSG = """
-<b>👋 Hey !{}, This is Online Search Botlist Bot <a href='https://t.me/PHListBot'>@PHListBot</a>.
-
-<a> Modified By : @PredatorHackerzZ</a>
-
-       <a> Credits goes to Everyone Who Supported.</b>
-
-<a> Made With ❤ By @TheTeleRoid </a>
+<b>Hey! {}❤️,
+I'm Mdisk Search Robot.🤖</a>
+I Can Search!🔍 What You Want?😜
+You Can Add Me In Your Groups
+<a>Deploy ❤ By @DTG_TV</a></b>
 """
     ADD_BOTS = """<b>Heya! {} If You Want to Add Your Bots In @PHListBot then Contact Admin From Below Given Groups</b>"""
 
