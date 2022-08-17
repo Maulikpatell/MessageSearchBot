@@ -3,7 +3,7 @@
 # Maybe you can use this for something else.
 # I first made this for @TGBotListBot ...
 # Edit according to your use.
-
+import asyncio
 from configs import Config
 from pyrogram import Client, filters, idle
 from pyrogram.errors import QueryIdInvalid
