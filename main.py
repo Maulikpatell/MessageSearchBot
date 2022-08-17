@@ -164,7 +164,8 @@ async def button(bot, cmd: CallbackQuery):
             await cmd.message.edit(
 			text=Config.START_MSG.format(cmd.from_user.mention),
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup([
+			reply_markup=InlineKeyboardMarkup(
+				[
 	                            [InlineKeyboardButton("➕ Add Me In Your Groups ➕", url="http://t.me/DTG_SIMPLE_BOT?startgroup=true")],
                                     [InlineKeyboardButton("Our Channel", url="https://t.me/DTG_TV"),
                                      InlineKeyboardButton("Our Movie Group", url="https://t.me/Movie_Search_bot_hindi")],
