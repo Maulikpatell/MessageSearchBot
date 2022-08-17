@@ -13,6 +13,7 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME")
     BOT_OWNER = int(os.environ.get("BOT_OWNER"))
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
     ABOUT_BOT_TEXT = """<b>This is a TeleGram BotList Search Bot of @TheTeleRoid And Some Other Bots Available On TeleGram.
 
 🤖 My Name: <a href='https://t.me/PHListBot'> @PHListBot </a>
