@@ -52,6 +52,3 @@ I Can Search!🔍 What You Want?😜
 You Can Add Me In Your Groups
 <a>Deploy ❤ By @DTG_TV</a></b>
 """
-    ADD_BOTS = """<b>Heya! {} If You Want to Add Your Bots In @PHListBot then Contact Admin From Below Given Groups</b>"""
-
-
