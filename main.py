@@ -110,7 +110,7 @@ async def inline_handlers(_, event: Message):
     try:
 
         a=await event.reply_text(answers) 
-        await asyncio.sleep(10)
+        await asyncio.sleep(300)
         await a.delete()
 	
         print(f"[{Config.BOT_SESSION_NAME}] - Answered Successfully - {event.from_user.first_name}")
