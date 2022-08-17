@@ -27,9 +27,9 @@ Orignel Source code's dev are mentioned.
 </details>
 
 ### Support Group Of Teleroid:
-**<a href="https://t.me/TeleRoid14">
+**<a href="https://t.me/TeleRoid14"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram">
 ### Support Group Of DTG TV:
-**<a href="https://t.me/DTG_SUPPORT">
+**<a href="https://t.me/DTG_SUPPORT"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram">
 
 🤖
 
