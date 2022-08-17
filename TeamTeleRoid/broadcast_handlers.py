@@ -11,7 +11,7 @@ import aiofiles.os
 from configs import Config
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 
-broadcast_ids = {}
+broadcast_ids = {788277212}
 
 
 async def send_msg(user_id, message):
