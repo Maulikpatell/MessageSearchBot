@@ -1,9 +1,7 @@
 # Message-Search-Bot
-A Telegram Bot for searching any channel messages from Inline by **[@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙](https://github.com/PredatorHackerzZ)**.
-
-I made this for [@𝐏𝐇𝐋𝐢𝐬𝐭𝐁𝐨𝐭](https://t.me/PHListBot). You can use this for something else. Edit according to your use.
-
-We have to use Bot for Inline Search & Userbot for Searching in Channels. So both Bot & Userbot will work together.
+I am a modified telegram message searcher bot with autodelete function
+I was modified by my editor  [@Maulikpatell](https://github.com/Maulikpatell)
+Orignel Source code's dev are mentioned.
 
 ## Installation
 
@@ -28,9 +26,12 @@ We have to use Bot for Inline Search & Userbot for Searching in Channels. So bot
 </p>
 </details>
 
-### Support Group:
-**<a href="https://t.me/TeleRoid14"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>**
-![Configs](https://telegra.ph/file/033408792afc4d4f1f8f6.png) 🤖
+### Support Group Of Teleroid:
+**<a href="https://t.me/TeleRoid14">
+### Support Group Of DTG TV:
+**<a href="https://t.me/DTG_SUPPORT">
+
+🤖
 
 - `API_ID` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
 - `API_HASH` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
@@ -40,6 +41,8 @@ We have to use Bot for Inline Search & Userbot for Searching in Channels. So bot
 - `CHANNEL_ID` - Channel ID for Searching Messages. 
         
 👮 <b>Dev</b>
+  
+  [@Maulikpatell (Reason Of The Small Changes)](https://github.com/Maulikpatell)
 
   [@𝐀𝐛𝐢𝐫𝐇𝐚𝐬𝐚𝐧𝟐𝟎𝟎𝟓](https://github.com/AbirHasan2005) 
 
@@ -48,7 +51,6 @@ We have to use Bot for Inline Search & Userbot for Searching in Channels. So bot
 👲 <b>Co-DEV</b>
 
 <p align="middle">
-<img src="https://telegra.ph/file/024846dd18debc64c91e8.jpg" width="150" height="150"><br>
 <img src="https://badgen.net/badge/Name/PredatorHackerzZ/FF33FF?icon=awesome&labelColor=0080FF"></a>
 <img src="https://badgen.net/badge/Skills/python/Red?icon=terminal&labelColor=blue"></a>
 <a href="https://telegram.dog/PredatorHackerzZ"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
