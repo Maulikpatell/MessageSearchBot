@@ -14,7 +14,7 @@ class Config(object):
     BOT_OWNER = int(os.environ.get("BOT_OWNER"))
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
-    ABOUT_BOT_TEXT = """<b>This is a TeleGram BotList Search Bot of @TheTeleRoid And Some Other Bots Available On TeleGram.
+    ABOUT_BOT_TEXT = """<b>This Is a Simple Message Search bot by @DTG_TV & @DTG_BOTS.
 
 🤖 My Name: <a href='https://t.me/DTG_TV'> Me Nahi Bataunga😂😂 </a>
 
