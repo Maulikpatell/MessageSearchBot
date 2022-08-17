@@ -131,30 +131,30 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("💢 Github", callback_data="https://github.com/PredatorHackerzZ/MessageSearchBot"),
-						InlineKeyboardButton("🚸 Powered By", url="https://t.me/MoviesFlixers_DL")
+						InlineKeyboardButton("Our Channel", url="https://t.me/DTG_TV"),
+						InlineKeyboardButton("Support Group", url="https://t.me/DTG_SUPPORT")
 					],
 					[
-						InlineKeyboardButton("👨‍💻 Developer ", url="https://t.me/TheTeleRoid"),
-						InlineKeyboardButton("🏠 Home", callback_data="gohome")
+						InlineKeyboardButton("Developer", url="https://t.me/DTG_"),
+						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
 			),
 			parse_mode="html"
 		)
-        elif "Help_msg" in cb_data:
+          elif "Help_msg" in cb_data:
             await cmd.message.edit(
 			text=Config.ABOUT_HELP_TEXT,
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("👥 About", callback_data="About_msg"),
-						InlineKeyboardButton("💢 Github Repo", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("About", callback_data="About_msg"),
+						InlineKeyboardButton("Our Channel", url="https://t.me/DTG_TV")
 					], 
                                         [
-						InlineKeyboardButton("Bot List", url="https://t.me/joinchat/t1ko_FOJxhFiOThl"),
-						InlineKeyboardButton("🏠 Home", callback_data="gohome")
+						InlineKeyboardButton("Owner", url="https://t.me/DTG_Admin_bot"),
+						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
 			),
@@ -164,53 +164,19 @@ async def button(bot, cmd: CallbackQuery):
             await cmd.message.edit(
 			text=Config.START_MSG.format(cmd.from_user.mention),
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(
-				[
-					[
-						InlineKeyboardButton("🛑 Support 🛑", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup")
-					],
-                                        [
-						InlineKeyboardButton("👥 Help", callback_data="Help_msg"),
-						InlineKeyboardButton("♻ About", callback_data="About_msg")
-					],
-                                        [
-						InlineKeyboardButton("+ Add Your Bots Here + ", callback_data="addbots")
-					],
-					[
-						InlineKeyboardButton("Search Inline ⤵", switch_inline_query_current_chat=""),
-						InlineKeyboardButton("Go Inline", switch_inline_query="")
-					]
-				]
-			),
-			parse_mode="html"
-		)
-        elif "addbots" in cb_data:
-            await cmd.message.edit(
-			text=Config.ADD_BOTS,
-			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(
-				[
-					[
-						InlineKeyboardButton("👥 TeleRoid Support 👥", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("👥 Space X Bots 👥", url="https://t.me/Sources_Codes")
-					],
-					[
-						InlineKeyboardButton("👥 CodeXBotz 👥", url="https://t.me/CodeXBotZSupport"),
-						InlineKeyboardButton("👥 Universal Bots 👥", url="https://t.me/JV_Community")
-					], 
-                                        [
-						InlineKeyboardButton("👥 Heiman Support 👥", url="https://t.me/HeimanSupport"),
-						InlineKeyboardButton("👥 TGRobot Support👥", url="https://t.me/joinchat/rqSonBIiCP01NWI1")
-					], 
-                                        [
-						InlineKeyboardButton("🏠 Home ", callback_data="gohome")
-					]
-				]
-			),
-			parse_mode="html"
+			reply_markup=InlineKeyboardMarkup([
+	                            [InlineKeyboardButton("➕ Add Me In Your Groups ➕", url="http://t.me/DTG_SIMPLE_BOT?startgroup=true")],
+                                    [InlineKeyboardButton("Our Channel", url="https://t.me/DTG_TV"),
+                                     InlineKeyboardButton("Our Movie Group", url="https://t.me/Movie_Search_bot_hindi")],
+	                            [InlineKeyboardButton("Support Group", url="https://t.me/DTG_SUPPORT")],
+                                    [InlineKeyboardButton("Help", callback_data="Help_msg"),
+                                     InlineKeyboardButton("About", callback_data="About_msg")]
+                                    ]  
+		       ),
+                       parse_mode="html"
 		)
 
+       
 # Start Clients
 Bot.start()
 User.start()
